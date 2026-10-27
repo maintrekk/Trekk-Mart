@@ -1,0 +1,22 @@
+{
+  "name": "trekk-mart-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check js/app.js && node --check js/admin.js && node --check js/auth.js && node --check js/signup.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^13.10.0"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
